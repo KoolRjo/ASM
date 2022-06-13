@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ASM</string>
+    <string name="my_name">Đỗ Mạnh Hiếu</string>
+    <string name="tx_dangnhap">Nhap ten tai khoan</string>
+    <string name="tx_password">Nhap mat khau</string>
+    <string name="button_login">Login</string>
+    <string name="button_forget_password">Forgotten</string>
+    <string name="button_register">Register</string>
+    <string name="password12words">Nhap password bao gom 12 ky tu</string>
+    <string name="avarta_description">Image chua anh cua anh Hieu</string>
+    <string name="query_hint">Bạn đang tìm kiếm điều gì</string>
+    <string name="txt_loading">Loading</string>
+
+</resources>

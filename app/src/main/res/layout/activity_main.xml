@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_avarta"
+        android:layout_width="203dp"
+        android:layout_height="153dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/avarta_description"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/avarta" />
+
+    <EditText
+        android:id="@+id/tx_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints="username"
+        android:hint="@string/tx_dangnhap"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tx_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_Username"
+        android:layout_alignStart="@id/tx_Username"
+        android:autofillHints="password"
+        android:hint="@string/password12words"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/tx_Query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_login"
+        android:layout_alignStart="@id/tx_Username"
+        android:autofillHints="Bạn đang tìm kiếm điều gì"
+        android:hint="@string/query_hint"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_Password"
+        android:layout_alignStart="@id/tx_Password"
+        android:text="@string/button_login"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/sliver"
+        />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_Password"
+        android:layout_toEndOf="@id/bt_login"
+        android:layout_marginStart="20dp"
+        android:text="@string/button_register"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/sliver"
+        />
+
+    <Button
+        android:id="@+id/bt_forget_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_Password"
+        android:layout_toEndOf="@id/bt_register"
+        android:layout_marginStart="20dp"
+        android:text="@string/button_forget_password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/sliver"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_SettingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_setting"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <ImageButton
+        android:id="@+id/bt_googleSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_Query"
+        android:layout_alignStart="@id/tx_Query"
+        android:src="@mipmap/google_search_icon"
+        tools:ignore="InvalidId" />
+</RelativeLayout>
